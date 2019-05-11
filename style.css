@@ -54,6 +54,7 @@ button:hover {
 
 #square {
   height: 400px;
+  max-height: 40%;
   width: 400px;
   background-color: coral;
 }
