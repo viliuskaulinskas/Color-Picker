@@ -35,11 +35,21 @@ button {
 button:hover {
   background-color: #3a3c3f;
   color: white;
-  transition: 300ms;
+  transition: 500ms;
 }
 
-#color-display {
+#square {
   height: 400px;
   width: 400px;
   background-color: coral;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 20pt;
+    background-color: red;
+  }
 }

@@ -7,17 +7,20 @@ input.addEventListener("keyup", function(event) {
 });
 
 function myFunction() {
-  var x = document.getElementById("color-code").value;
-  if (x == "") {  }
+  var x = document.getElementById("color-code").value; //paima IVESTA spalvos koda is laukelio
+  if (x == "") {  } // jei nieko neivesta, nieko nedaro
   else {
-    var y = document.getElementById("color-display").style.backgroundColor;
-    document.getElementById("color-display").style.backgroundColor = x;
-    if (y != document.getElementById("color-display").style.backgroundColor) {
-      document.getElementById("color-name").innerHTML = x;
+    var y = document.getElementById("square").style.backgroundColor; // paima DABARTINE kvadrato spalva
+    document.getElementById("square").style.backgroundColor = x; // nustato nauja kvadrato spalva
+    if (y != document.getElementById("square").style.backgroundColor) { //jei spalva x gerai ivesta ir nelygi pries tai buvusiai
+      document.getElementById("color-name").innerHTML = x; // paraso naujos spalvos koda
     }
+    else if (y === document.getElementById("square").style.backgroundColor) {  }
     else {
-      document.getElementById("color-name").innerHTML = "no such color: " + x;
+      if (x.length < 18) document.getElementById("color-name").innerHTML = "no such color: " + x;
+      else document.getElementById("color-name").innerHTML = "no such color";
     }
+
     document.getElementById("color-code").focus();
     document.getElementById("color-code").placeholder = "enter color";
     document.getElementById("color-code").value = "";
