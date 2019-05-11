@@ -1,11 +1,26 @@
 body {
   text-align: center;
   position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   font-family: 'Titillium Web', sans-serif;
-  font-size: 20pt;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    font-size: 30pt;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20pt;
+  }
 }
 
 #color-code {
@@ -42,13 +57,4 @@ button:hover {
   height: 400px;
   width: 400px;
   background-color: coral;
-}
-
-@media screen and (min-width: 600px) {
-  body {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: red;
-  }
 }
