@@ -15,7 +15,7 @@ function myFunction() {
     if (y != document.getElementById("square").style.backgroundColor) { //jei spalva x gerai ivesta ir nelygi pries tai buvusiai
       document.getElementById("color-name").innerHTML = x; // paraso naujos spalvos koda
     }
-    else if (y === document.getElementById("square").style.backgroundColor) {  }
+    else if (y === x) {  }
     else {
       if (x.length < 18) document.getElementById("color-name").innerHTML = "no such color: " + x;
       else document.getElementById("color-name").innerHTML = "no such color";
