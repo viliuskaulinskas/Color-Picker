@@ -7,7 +7,8 @@ input.addEventListener("keyup", function(event) {
 });
 
 function myFunction() {
-  var x = document.getElementById("color-code").value; //paima IVESTA spalvos koda is laukelio
+  var x1 = document.getElementById("color-code").value; //paima IVESTA spalvos koda is laukelio
+  var x = x1.toLowerCase();
   if (x == "") {  } // jei nieko neivesta, nieko nedaro
   else {
     var y = document.getElementById("square").style.backgroundColor; // paima DABARTINE kvadrato spalva
